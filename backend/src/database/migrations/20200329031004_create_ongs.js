@@ -1,4 +1,4 @@
-// npx knex migrate:run
+// npx knex migrate:latest
 exports.up = function (knex) {
     return knex.schema.createTable('ongs', table => {
         table.string('id').primary()
