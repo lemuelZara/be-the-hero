@@ -1,4 +1,5 @@
 const express = require('express')
+const OngController = require('./controllers/OngController')
 
 const routes = express.Router()
 
@@ -20,10 +21,9 @@ const routes = express.Router()
  * NoSQL: MongoDB, CouchDB, ...
  */
 
-routes.get('/', (req, res) => {
-    return res.json({
-        message: 'Hello!'
-    })
-})
+routes.get('/ongs', OngController.show)
+
+routes.post('/ongs', OngController.store)
+
 
 module.exports = routes
