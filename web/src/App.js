@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 
+import { Logon } from './pages/Logon/index'
+
+import './global.css'
+
 export const App = () => {
   const [count, setCount] = useState(0)
 
@@ -9,5 +13,10 @@ export const App = () => {
     })
   }
 
-  return <h1 onClick={handleClick}>Hello {count}!</h1>
+  return (
+    <>
+      <Logon />
+      <h1 onClick={handleClick}>Hello {count}!</h1>
+    </>
+  )
 }
