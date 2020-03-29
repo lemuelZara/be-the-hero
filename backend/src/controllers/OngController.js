@@ -20,7 +20,7 @@ module.exports = {
         return response.json({ id })
     },
 
-    async show(request, response) {
+    async index(request, response) {
         const ongs = await connection('ongs').select('*')
 
         return response.json(ongs)

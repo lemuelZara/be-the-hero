@@ -21,7 +21,7 @@ const routes = express.Router()
  * NoSQL: MongoDB, CouchDB, ...
  */
 
-routes.get('/ongs', OngController.show)
+routes.get('/ongs', OngController.index)
 
 routes.post('/ongs', OngController.store)
 
