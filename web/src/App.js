@@ -1,5 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const App = () => {
-  return <h1>Hello !</h1>
+  const [count, setCount] = useState(0)
+
+  const handleClick = () => {
+    setCount(prevState => {
+      return prevState = prevState + 1
+    })
+  }
+
+  return <h1 onClick={handleClick}>Hello {count}!</h1>
 }
