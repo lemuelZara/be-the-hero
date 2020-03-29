@@ -1,5 +1,6 @@
 import React from 'react'
-import '@fortawesome/fontawesome-free'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css'
 
@@ -14,12 +15,12 @@ export const Logon = () => {
 
                 <form>
                     <h1>Faça seu logon</h1>
-                    <i class="fas fa-camera"></i>
 
                     <input placeholder="Sua ID" />
-                    <button type="submit">Entrar</button>
+                    <button className="button" type="submit">Entrar</button>
 
                     <a href="/register">
+                        <FontAwesomeIcon icon={faSignInAlt} style={{ fontSize: 18 }} color="#E02043" />
                         Não tenho cadastro
                     </a>
                 </form>
