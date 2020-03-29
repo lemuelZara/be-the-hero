@@ -1,4 +1,4 @@
-
+// npx knex migrate:latest
 exports.up = function (knex) {
     return knex.schema.createTable('incidents', table => {
         table.increments()
