@@ -16,6 +16,11 @@ server.use(express.json())
  * Request Body: request.body, corpo da requisição (Alteração, criação)
  */
 
+/**
+ * SQL: MySQL, SQLite, PostgreSQL, Oracle, ...
+ * NoSQL: MongoDB, CouchDB, ...
+ */
+
 server.get('/', (req, res) => {
     return res.json({ message: 's' })
 })
