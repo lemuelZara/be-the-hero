@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css'
 
@@ -19,10 +20,10 @@ export const Logon = () => {
                     <input placeholder="Sua ID" />
                     <button className="button" type="submit">Entrar</button>
 
-                    <a href="/register">
-                        <FontAwesomeIcon icon={faSignInAlt} style={{ fontSize: 18 }} color="#E02043" />
+                    <Link className="back-link" to="/register">
+                        <FontAwesomeIcon icon={faArrowRight} style={{ fontSize: 18 }} color="#E02043" />
                         Não tenho cadastro
-                    </a>
+                    </Link>
                 </form>
             </section>
 
