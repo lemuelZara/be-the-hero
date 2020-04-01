@@ -26,7 +26,7 @@ export const Register = () => {
 
                 <form action="">
                     <input type="text" placeholder="Nome da ONG" />
-                    <input type="text" placeholder="E-mail" />
+                    <input type="email" placeholder="E-mail" />
                     <input type="text" placeholder="Whatsapp" />
 
                     <div className="input-group">
