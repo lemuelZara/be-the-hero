@@ -28,7 +28,7 @@ export const Register = () => {
 
             history.push('/')
         } catch (error) {
-            alert(`Error!`)
+            alert(`Erro: ${error}`)
         }
     }
 
