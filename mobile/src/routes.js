@@ -12,9 +12,10 @@ export const Routes = () => {
     return (
         // headerShown: false, desabilitar o cabeçalho da Rota
         <NavigationContainer>
-            <AppStack.Navigator screenOptions={{ headerShown: false }}> 
-                <AppStack.Screen name="Details" component={Details} />
+
+            <AppStack.Navigator screenOptions={{ headerShown: false }}>
                 <AppStack.Screen name="Incident" component={Incident} />
+                <AppStack.Screen name="Details" component={Details} />
             </AppStack.Navigator>
 
         </NavigationContainer>
