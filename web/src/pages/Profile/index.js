@@ -39,7 +39,7 @@ export const Profile = () => {
 
             setIncidents(incidents.filter(incident => incident.id !== id))
         } catch (error) {
-            alert(`Erro: ${error}`)
+            alert(`Erro ao deletar!`)
         }
     }
 
