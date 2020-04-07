@@ -13,8 +13,8 @@ export const Incident = () => {
 
     const navigation = useNavigation()
 
-    const navigateToDetail = () => {
-        navigation.navigate('Details')
+    const navigateToDetail = (incident) => {
+        navigation.navigate('Details', { incident })
     }
 
     useEffect(() => {
@@ -63,7 +63,7 @@ export const Incident = () => {
                                 .format(incident.value)}
                         </Text>
 
-                        <TouchableOpacity style={style.detailsButton} onPress={navigateToDetail}>
+                        <TouchableOpacity style={style.detailsButton} onPress={() => navigateToDetail(incident)}>
                             <Text style={style.detailsButtonText}>Ver mais detalhes</Text>
                             <Feather name="arrow-right" size={16} color="#E02041" />
                         </TouchableOpacity>
