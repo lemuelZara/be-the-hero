@@ -3,17 +3,16 @@ const cors = require('cors')
 const { errors } = require('celebrate')
 const routes = require('./routes')
 
-const server = express()
+const app = express()
 
-server.use(cors())
+app.use(cors())
 /* 
-server.use(cors({
+app.use(cors({
     origin: 'http://meusite.com.br
 }))
 */
-server.use(express.json())
-server.use(routes)
+app.use(express.json())
+app.use(routes)
+app.use(errors())
 
-server.use(errors())
-
-server.listen(3333)
+module.exports = app
