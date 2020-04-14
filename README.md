@@ -9,8 +9,8 @@
   <a href="https://www.linkedin.com/in/lemuelzara/">
     <img alt="Made by LemuelZara" src="https://img.shields.io/badge/made%20by-Lemuel%20Zara-%2304D361">
   </a>
-  <a aria-label="Versão do Node" href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.16.1">
-    <img src="https://img.shields.io/badge/node.js@lts-12.16.1-informational?logo=Node.JS"></img>
+  <a aria-label="Versão do Node" href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.16.2">
+    <img src="https://img.shields.io/badge/node.js@lts-12.16.2-informational?logo=Node.js"></img>
   </a>
   <a aria-label="Versão do React" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16131-november-14-2019">
     <img src="https://img.shields.io/badge/react-16.13.1-informational?logo=react"></img>
