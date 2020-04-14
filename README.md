@@ -1,4 +1,4 @@
-﻿<h1 align="center">
+<h1 align="center">
     <img alt="Be The Hero" src="assets/logo.svg" width="250px" />
 </h1>
 <h4 align="center"> 
